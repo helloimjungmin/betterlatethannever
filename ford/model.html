@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>모델 및 사양</title>
+    <link rel="icon" href="img/favicon.png">
+
+    <style>
+a:link{text-decoration: none;}
+a:visited{color: #003478;}
+.menu-li, .menu-li>a {transition: 0.5s;}
+
+header{position: fixed; top: 0; left: 0; z-index: 999; width: 100%; height:50px; background:linear-gradient(180deg,rgb(255, 255, 255),rgba(116, 124, 124, 0.29)); display: flex; justify-content: center; align-items: center;}
+.nav{width: 1200px;  display: flex;}
+.logo{flex: 3;}
+.logo img{width: 15%}
+.menu-li{display: flex; align-items: center; justify-content: space-around; font-size: 15px; color: #003478; font-weight: 600; width: 520px;}
+.menu-li img{width: 15px;}
+.menu-li .li:nth-child(5){display: flex; justify-content: center; align-items: center; background: white; border-radius: 10px; padding: 5px; }
+        
+        
+        * {list-style: none;
+            padding: 0;
+            margin: 0;
+            position: relative;
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+
+        .s1 .t1 {
+            text-align: center;
+            margin: 100px 0;
+            letter-spacing: 5px;
+            font-size: 80px;
+            font-weight: 900;
+        }
+
+        .mains {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+        }
+
+        .tri1 {
+            position: absolute;
+            width: 0px;
+            height: 0px;
+            left: 0;
+            top: 0;
+            z-index: 3;
+            border-top: 180px solid rgb(255, 255, 255);
+            border-left: none;
+            border-right: 70px solid transparent;
+            border-bottom: none;
+        }
+
+        .tri2 {
+            position: absolute;
+            width: 0px;
+            height: 0px;
+            left: 0;
+            bottom: 0;
+            z-index: 3;
+            border-top: none;
+            border-left: none;
+            border-right: 70px solid transparent;
+            border-bottom: 120px solid rgb(255, 255, 255);
+        }
+
+        .tri3 {
+            position: absolute;
+            width: 0px;
+            height: 0px;
+            right: 0;
+            top: 0;
+            z-index: 3;
+            border-top: 180px solid rgb(255, 255, 255);
+            border-left: 70px solid transparent;
+            border-right: none;
+            border-bottom: none;
+        }
+
+
+        .tri4 {
+            position: absolute;
+            width: 0px;
+            height: 0px;
+            right: 0;
+            bottom: 0;
+            z-index: 3;
+            border-top: none;
+            border-left: 70px solid transparent;
+            border-right: none;
+            border-bottom: 120px solid rgb(255, 255, 255);
+        }
+
+        .tri5 {
+            position: absolute;
+            width: 0px;
+            height: 0px;
+            right: 0;
+            top: 0;
+            z-index: 3;
+            border-top: 80px solid rgb(255, 255, 255);
+            border-left: 70px solid transparent;
+            border-right: none;
+            border-bottom: none;
+        }
+
+        .tri6 {
+            position: absolute;
+            width: 0px;
+            height: 0px;
+            right: 0;
+            bottom: 0;
+            z-index: 3;
+            border-top: none;
+            border-left: 70px solid transparent;
+            border-right: none;
+            border-bottom: 120px solid rgb(255, 255, 255);
+        }
+
+        .tri7 {
+            position: absolute;
+            width: 0px;
+            height: 0px;
+            left: 0;
+            top: 0;
+            z-index: 3;
+            border-top: 80px solid rgb(255, 255, 255);
+            border-left: none;
+            border-right: 70px solid transparent;
+            border-bottom: none;
+        }
+
+        .tri8 {
+            position: absolute;
+            width: 0px;
+            height: 0px;
+            left: 0;
+            bottom: 0;
+            z-index: 3;
+            border-top: none;
+            border-left: none;
+            border-right: 70px solid transparent;
+            border-bottom: 120px solid rgb(255, 255, 255);
+        }
+
+        .bu {
+            text-align: center;
+            height: 300px;
+            width: 25%;
+        }
+
+        .b1 {
+            background: #dddddd;
+        }
+
+        .b1 img {
+            filter: drop-shadow(-5px 2px 8px #838483);
+            width: 400px;
+            height: 230px;
+            z-index: 999;
+            top: 50px;
+            left: 100px;
+            transition: all ease 1s;
+        }
+
+        .b1 img:hover {
+            transform: rotate(-10deg);
+        }
+
+        .b2 {
+            box-shadow: inset -1px 0px 5px #1c2633;
+            padding: 70px 0 70px 80px;
+            box-sizing: border-box;
+            background-image: linear-gradient(-90deg, #3330d1, #003478);
+        }
+
+        .b2 img {
+            width: 100px;
+            height: 50px;
+            transition: all ease 1s;
+        }
+
+        .b2 img:hover {
+            filter: drop-shadow(5px 2px 8px #ffffff);
+        }
+
+        .limi {
+            font-size: 30px;
+            color: white;
+            font-weight: 600;
+        }
+
+        .limi span {
+            font-family: 'Abril Fatface', cursive;
+            color: white;
+            font-weight: 400;
+        }
+
+        .b3 {
+            padding: 70px 80px 70px 0;
+            box-sizing: border-box;
+            ;
+            background-image: linear-gradient(-90deg, #3330d1, #003478);
+        }
+
+        .b3 img {
+            width: 100px;
+            height: 50px;
+            transition: all ease 1s;
+        }
+
+        .b3 img:hover {
+            filter: drop-shadow(-5px 2px 8px #ffffff);
+        }
+
+        .phev {
+            font-size: 30px;
+            color: white;
+            font-weight: 600;
+        }
+
+        .phev span {
+            font-family: 'Abril Fatface', cursive;
+            color: white;
+            font-weight: 400;
+        }
+
+        .b4 {
+            background: #dddddd;
+        }
+
+        .b4 img {
+            filter: drop-shadow(-5px 2px 8px #838483);
+            width: 400px;
+            height: 230px;
+            z-index: 999;
+            top: 50px;
+            left: -100px;
+            transition: all ease 1s;
+        }
+
+        .b4 img:hover {
+            transform: rotate(10deg);
+        }
+
+        .s2 {padding-top: 100px;}
+
+        .s2 .list {}
+
+        .s2 .list .item {
+            display: flex;
+            width: 80vw;
+            margin: 0 auto;
+            margin-bottom: 100px;
+        }
+
+        .s2 .name {
+            font-size: 30px; font-weight: 600;
+            flex: 1;
+        }
+
+        .s2 .limi-t {
+            line-height: 40px;
+            flex: 1;
+        }
+
+        .s2 .phev-t {
+            line-height: 40px;
+            flex: 1;
+        }
+        .s2 .item:nth-child(3),:nth-child(6){background: #FFE965;}
+    </style>
+
+</head>
+
+<body>
+         <header>
+       <div class="nav">
+         <div class="logo">
+          <a href="FORD.html"><img src="img/HEADER/ford-logo.png"></a>
+           </div>
+           <ul class="menu-li">
+               <li class="li"><a href="FORD.html">메인</a></li>
+               <li class="li"><a href="#sp">특장점</a></li>
+               <li class="li"><a href="gallery.html">갤러리</a></li>
+               <li class="li"><a href="model.html">모델 및 사양</a></li>
+               <li class="li"><a href="testdrive.html"><img src="img/HEADER/right.png">시승신청</a></li>
+           </ul>
+       </div>
+       </header>
+   
+    <section class="s s1">
+        <div class="t1">모델 및 사양</div>
+
+        <div class="mains">
+            <div class="bu b1">
+                <div class="tri5"></div>
+                <div class="tri6"></div>
+                <img src="img/s9/s9-1.png">
+            </div>
+            <div class="bu b2">
+                <div class="tri1"></div>
+                <div class="tri2"></div>
+                <img src="img/s9/left.png">
+                <div class="limi"><span>LIMITED</span><br>60,100,000원</div>
+            </div>
+            <div class="bu b3">
+                <div class="tri3"></div>
+                <div class="tri4"></div>
+                <img src="img/s9/right.png">
+                <div class="phev"><span>PHEV</span><br>73,900,000원</div>
+            </div>
+            <div class="bu b4">
+                <div class="tri7"></div>
+                <div class="tri8"></div>
+                <img src="img/s9/s9-4.png">
+            </div>
+        </div>
+    </section>
+
+    <section class="s s2">
+        <ul class="list">
+
+            <li class="item">
+
+                <div class="name">Capacities</div>
+                <div class="limi-t">연료탱크 : 67.8L<br>
+                    탑승인원 : 7명</div>
+                <div class="phev-t">연료탱크 : 67.8L<br>
+                    탑승인원 : 7명</div>
+            </li>
+
+            <li class="item">
+                <div class="name">Driver Assist Technology</div>
+                <div class="limi-t">Side-Wind Stabilization<br>
+                    오토 홀드<br>
+                    코-파일럿 360 어시스트(Co-Pilot360™ Assist) Plus<br>
+                    사각지대 정보 시스템(BLIS® ) (후측방 경고 시스템 포함)<br>
+                    차선이탈 경보 시스템<br>
+                    긴급 자동 제동 기능이 포함된 충돌 방지 보조 기능<br>
+                    어댑티브 크루즈 컨트롤<br>
+                    Stop ＆ Go 및 Lane Centering 기능 포함<br>
+                    충돌 회피 조향 지원(Evasive Steering Assist)<br>
+                    전방 감지 시스템<br>
+                    충돌 후 제동 시스템<br>
+                    후방 감지 시스템<br>
+                    후방 카메라 (Washer 포함)<br>
+                    힐 디센트 컨트롤(Hill Descent Control™)<br>
+                    힐 스타트 어시스트 </div>
+                <div class="phev-t">Side-Wind Stabilization<br>
+                    오토 홀드<br>
+                    코-파일럿 360 어시스트(Co-Pilot360™ Assist) Plus<br>
+                    사각지대 정보 시스템(BLIS® ) (후측방 경고 시스템 포함)<br>
+                    차선이탈 경보 시스템<br>
+                    긴급 자동 제동 기능이 포함된 충돌 방지 보조 기능<br>
+                    어댑티브 크루즈 컨트롤<br>
+                    Stop ＆ Go 및 Lane Centering 기능 포함<br>
+                    충돌 회피 조향 지원(Evasive Steering Assist)<br>
+                    전방 감지 시스템<br>
+                    충돌 후 제동 시스템<br>
+                    후방 감지 시스템<br>
+                    후방 카메라 (Washer 포함)<br>
+                    힐 디센트 컨트롤(Hill Descent Control™)<br>
+                    힐 스타트 어시스트 </div>
+            </li>
+
+            <li class="item">
+                <div class="name">Engines</div>
+                <div class="limi-t">배기량(cc) : 2,261<br>
+                    엔진 : 2.3L EcoBoost® I-4 Engine<br>
+                    연료 : 휘발유<br>
+                    최고출력(ps/rpm) : 304/5,500<br>
+                    최대토크(kg.m/rpm) : 42.9/3,500 </div>
+                <div class="phev-t">배기량(cc) : 2,956<br>
+                    엔진 : 3.0L Eco-Boost<br>
+                    연료 : 전기, 휘발유<br>
+                    최고출력(ps/rpm) : 405/5,000<br>
+                    최대토크(kg.m/rpm) : 57.3/3,000 </div>
+            </li>
+
+            <li class="item">
+                <div class="name">Exterior</div>
+                <div class="limi-t">LED 시그니처 라이팅<br>
+                    LED 안개등<br>
+                    LED 테일램프<br>
+                    LED 헤드램프<br>
+                    주간 주행등 <br>
+                    오토 하이빔 <br>
+                    오토 램프 On/Off<br>
+                    Wheels ＆ Tire <br>
+                    20" Polished 알루미늄 휠<br>
+                    P255/55R20 사계절 BSW 타이어<br>
+                    미니 스페어 타이어<br>
+                    뒷범퍼 스텝 패드<br>
+                    듀얼 크롬 배기구<br>
+                    빗물 감지 와이퍼<br>
+                    새틴 루프랙 사이드 레일<br>
+                    시동 버튼이 포함된 인텔리전트 액세스<br>
+                    액티브 그릴 셔터<br>
+                    이지퓨얼(Easy Fuel®) 캡리스 연료 주입구<br>
+                    트윈 패널 문루프<br>
+                    핸즈프리 파워 리프트 게이트 </div>
+                <div class="phev-t">LED 시그니처 라이팅<br>
+                    LED 안개등<br>
+                    LED 테일램프<br>
+                    LED 헤드램프<br>
+                    주간 주행등 <br>
+                    오토 하이빔 <br>
+                    오토 램프 On/Off<br>
+                    Wheels ＆ Tire <br>
+                    20" Polished 알루미늄 휠<br>
+                    P255/55R20 사계절 BSW 타이어<br>
+                    미니 스페어 타이어<br>
+                    뒷범퍼 스텝 패드<br>
+                    듀얼 크롬 배기구<br>
+                    빗물 감지 와이퍼<br>
+                    새틴 루프랙 사이드 레일<br>
+                    시동 버튼이 포함된 인텔리전트 액세스<br>
+                    액티브 그릴 셔터<br>
+                    이지퓨얼(Easy Fuel®) 캡리스 연료 주입구<br>
+                    트윈 패널 문루프<br>
+                    핸즈프리 파워 리프트 게이트 </div>
+            </li>
+
+            <li class="item">
+                <div class="name">Exterior Dimensions(mm)</div>
+                <div class="limi-t">전고 : 1,775<br>
+                    전장 : 5,050<br>
+                    전폭 : 2,005<br>
+                    휠베이스 : 3,025</div>
+                <div class="phev-t">전고 : 1,775<br>
+                    전장 : 5,050<br>
+                    전폭 : 2,005<br>
+                    휠베이스 : 3,025</div>
+            </li>
+
+            <li class="item">
+                <div class="name">Fuel Economy</div>
+                <div class="limi-t">공차중량(kg) : 2,085<br>
+                    등급 : 5등급<br>
+                    복합 CO₂ 배출량(g/km) : 189<br>
+                    연비(복합/도심/고속도로) :<br>
+                    휘발유(km/l): 8.9/8.1/ 10.2 </div>
+                <div class="phev-t">공차중량(kg) : 2,625<br>
+                    복합 CO₂ 배출량(g/km) : 65<br>
+                    연비(복합/도심/고속도로) :<br>
+                    휘발유(km/l): 9.3 / 8.8 / 10.1<br>
+                    전기(km/kWh): 2.4 / 2.3 / 2.6<br>
+                    1회 충전 주행거리(km) : 30 </div>
+            </li>
+
+            <li class="item">
+                <div class="name">Interior ＆ Comfort</div>
+                <div class="limi-t">220V 전원 소켓<br>
+                    6.5인치 컬러 계기판<br>
+                    Tri-Zone 전자식 온도 조절 장치<br>
+                    무선 충전 패드<br>
+                    시트<br>
+                    운전석/동반석 10-way 파워 조절 기능<br>
+                    운전석/동반석 열선/통풍시트<br>
+                    운전석 메모리 기능<br>
+                    천공 가죽 시트<br>
+                    2열 열선 기능<br>
+                    2열 벤치 시트 및 이지 엔트리<br>
+                    2열 수동 선블라인드<br>
+                    3열 파워 폴드 시트 (Third Row 50/50 PowerFold® Seat)<br>
+                    앰비언트 라이팅<br>
+                    에코 코치<br>
+                    열선 기능이 포함된 가죽 스티어링 휠<br>
+                    오디오 - B＆O Play™ 12 Speakers 오디오 시스템<br>
+                    워셔 및 분할 보기가 포함된 360도 카메라<br>
+                    파워 틸트/텔레스코픽 스티어링 칼럼<br>
+                    포드 싱크3 엔터테인먼트 시스템(SYNC®)<br>
+                    8인치 터치 스크린<br>
+                    음성인식 커뮤니케이션 </div>
+                <div class="phev-t">220V 전원 소켓<br>
+                    6.5인치 컬러 계기판<br>
+                    Tri-Zone 전자식 온도 조절 장치<br>
+                    무선 충전 패드<br>
+                    시트<br>
+                    운전석/동반석 10-way 파워 조절 기능<br>
+                    운전석/동반석 열선/통풍시트<br>
+                    운전석 메모리 기능<br>
+                    천공 가죽 시트<br>
+                    2열 열선 기능<br>
+                    2열 벤치 시트 및 이지 엔트리<br>
+                    2열 수동 선블라인드<br>
+                    3열 파워 폴드 시트 (Third Row 50/50 PowerFold® Seat)<br>
+                    앰비언트 라이팅<br>
+                    에코 코치<br>
+                    열선 기능이 포함된 가죽 스티어링 휠<br>
+                    오디오 - B＆O Play™ 12 Speakers 오디오 시스템<br>
+                    워셔 및 분할 보기가 포함된 360도 카메라<br>
+                    파워 틸트/텔레스코픽 스티어링 칼럼<br>
+                    포드 싱크3 엔터테인먼트 시스템(SYNC®)<br>
+                    8인치 터치 스크린<br>
+                    음성인식 커뮤니케이션 </div>
+            </li>
+
+            <li class="item">
+                <div class="name">Mechanical</div>
+                <div class="limi-t">Selectshift® : 10단 자동 변속기<br>
+                    독립식 프론트 및 리어 서스펜션<br>
+                    로터리 기어 시프트 다이얼<br>
+                    익스플로러 4WD<br>
+                    인텔리전트 4WD<br>
+                    지형 관리 시스템(Terrain Management System™)<br>
+                    전동 파워 스티어링<br>
+                    전자식 주차 브레이크 </div>
+                <div class="phev-t">Selectshift® : 10단 자동 변속기<br>
+                    독립식 프론트 및 리어 서스펜션<br>
+                    로터리 기어 시프트 다이얼<br>
+                    익스플로러 4WD<br>
+                    인텔리전트 4WD<br>
+                    지형 관리 시스템(Terrain Management System™)<br>
+                    전동 파워 스티어링<br>
+                    전자식 주차 브레이크</div>
+            </li>
+
+            <li class="item">
+                <div class="name">Safety ＆ Security</div>
+                <div class="limi-t">LATCH - 유아/어린이 안전시트 장착용 앵커 시스템<br>
+                    SOS 포스트 크래시 얼러트 시스템<br>
+                    개별 타이어 압력 모니터링 시스템<br>
+                    마이키(MyKey®)<br>
+                    시큐리록 패시브 도난 방지 시스템<br>
+                    시큐리 코드 키리스 엔트리 키패드 (SecuriCode™ Keyless Entry Keypad)<br>
+                    어드밴스트랙(AdvanceTrac®)(전자제어 주행 안정 장치(RSC®)포함)<br>
+                    에어백<br>
+                    듀얼 스테이지 운전석 및 동반석, 사이드 에어백<br>
+                    운전석/동반석 무릎 에어백<br>
+                    롤오버 센서가 포함된 안전 캐노피 시스템(Safety Canopy®)<br>
+                    동승자 감지 시스템<br>
+                    자동 도어잠금/열림<br>
+                    커브 컨트롤<br>
+                    퍼스털 세이프티 시스템 (Personal Safety System™) </div>
+                <div class="phev-t">LATCH - 유아/어린이 안전시트 장착용 앵커 시스템<br>
+                    SOS 포스트 크래시 얼러트 시스템<br>
+                    개별 타이어 압력 모니터링 시스템<br>
+                    마이키(MyKey®)<br>
+                    시큐리록 패시브 도난 방지 시스템<br>
+                    시큐리 코드 키리스 엔트리 키패드 (SecuriCode™ Keyless Entry Keypad)<br>
+                    어드밴스트랙(AdvanceTrac®)(전자제어 주행 안정 장치(RSC®)포함)<br>
+                    에어백<br>
+                    듀얼 스테이지 운전석 및 동반석, 사이드 에어백<br>
+                    운전석/동반석 무릎 에어백<br>
+                    롤오버 센서가 포함된 안전 캐노피 시스템(Safety Canopy®)<br>
+                    동승자 감지 시스템<br>
+                    자동 도어잠금/열림<br>
+                    커브 컨트롤<br>
+                    퍼스털 세이프티 시스템 (Personal Safety System™) </div>
+            </li>
+        </ul>
+
+    </section>
+
+</body></html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>시승신청하기</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="icon" href="img/favicon.png">
+
+    
+    <style>
+    *{list-style: none; padding: 0; margin: 0; position: relative; font-family: 'Noto Sans KR', sans-serif;}
+    section{width: 1194px; margin: 0 auto; padding: 50px 100px; box-sizing: border-box;}
+    
+    .s1 p:nth-child(1){font-size: 40px; font-weight: 900;}
+    .s1 p{font-size: 20px;}
+    .s1 .head{border-bottom: 5px solid #003478; margin-bottom: 100px; padding-bottom: 10px;}
+    .s1 .head img{width: 10%;}
+    .s1 .main{display: flex;}
+    .s1 .left{line-height: 100px;}
+    .s1 .right{margin-top: 100px;}
+    .s1 .right img{width: 100%; filter:drop-shadow(5px 5px 5px #b1b1b1);}
+    
+    .s2{font-size: 20px;}
+    .s2 .head{border-bottom: 5px solid #003478; margin-bottom: 50px; padding-bottom: 10px; }
+    .s2 .info{display: flex; align-items:baseline; justify-content: flex-start; line-height: 100px;}
+    .s2 .info .left{width: 200px;}
+    
+    textarea{width: 600px; height: 200px; margin-right: 30px; font-size: 20px; color: #707070; text-indent: 10px; }
+    button{padding: 10px 20px; font-size: 20px; position: absolute; bottom: 0; right: 0;}
+    input{font-size: 18px; color: #707070; text-indent: 10px;  width: 200px;}
+    
+    select{font-size: 18px; color: #707070;}
+    .cb{color: #707070; font-size: 18px; }
+    .cb>input{width: auto; margin-right: 10px;}
+        
+    </style>
+</head>
+<body>
+    <section class="s s1">
+        <div class="head"><a href="FORD.html"><img src="img/HEADER/ford-logo.png" alt="로고"></a></div>
+        <div class="main">
+            <div class="left">
+                <p>THE ALL-NEW EXPLORER 시승신청</p>
+                <p>시승모델 :  </p>
+                <p>THE ALL-NEW EXPLORER</p>
+            </div>
+            <div class="right">
+                <img src="img/s1/main-car.png" alt="메인차이미지">
+            </div> 
+        </div>
+    </section>
+    <section class="s s2">
+        <div class="head">
+            <p>필수 입력 정보</p>
+        </div>
+        <div class="con">
+            <ul class="list">
+               
+                <li class="info">
+                <div class="left">
+                    이름
+                </div>
+                <input type="text" value="이름을 입력 하세요.">
+                </li>
+                
+                <li class="info">
+                <div class="left">
+                    휴대전화
+                </div>
+                <div class="phone">
+                <input type="text" value="010">
+                <input type="text" value="1234">
+                <input type="text" value="5678">
+                </div>
+                </li>
+                
+                <li class="info">
+                <div class="left">
+                    이메일
+                </div>
+                <input type="text" value="이메일을 입력 하세요.">
+                </li>
+                
+                <li class="info">
+                <div class="left">
+                    생년월일
+                </div>
+                <div class="birth">
+                <input type="text" value="1900">
+                <input type="text" value="01">
+                <input type="text" value="01">
+                </div>
+                </li>
+                
+                <li class="info">
+                <div class="left">
+                    성별
+                </div>
+                <select>
+                <option selected>선택하세요</option>
+                <option>여성</option>
+                <option>남성</option>
+                </select>
+                </li>
+                
+                <li class="info">
+                <div class="left">
+                    지역
+                </div>
+                <select>
+                <option selected>선택하세요</option>
+                <option>강원도</option>
+                <option>경기도</option>
+                <option>경상도</option>
+                <option>광주</option>
+                <option>대구</option>
+                <option>대전</option>
+                <option>부산</option>
+                <option>서울</option>
+                <option>세종</option>
+                <option>울산</option>
+                <option>인천</option>
+                <option>전라도</option>
+                <option>제주도</option>
+                <option>충청도</option>
+                </select>
+                </li>
+                
+                <li class="info">
+                <div class="left">
+                    전시장 선택
+                </div>
+                <select>
+                <option selected>선택하세요</option>
+                <option>강원도 전시장</option>
+                <option>경기도 전시장</option>
+                <option>경상도 전시장</option>
+                <option>광주 전시장</option>
+                <option>대구 전시장</option>
+                <option>대전 전시장</option>
+                <option>부산 전시장</option>
+                <option>서울 전시장</option>
+                <option>세종 전시장</option>
+                <option>울산 전시장</option>
+                <option>인천 전시장</option>
+                <option>전라도 전시장</option>
+                <option>제주도 전시장</option>
+                <option>충청도 전시장</option>
+                </select>
+                </li>
+                
+                <li class="info">
+                <div class="left">
+                    동의
+                </div>
+                <div class="cb">
+                <input type="checkbox">(필수) 개인정보 수집 및 이용 동의<br>
+                <input type="checkbox">(필수) 개인정보 제 3자 제공 및 처리위탁에 대한 동의<br>
+                <input type="checkbox">(선택) 마케팅 정보 수신 동의<br>
+                <input type="checkbox">(선택) 개인정보 처리위탁에 대한 동의<br>
+                </div>
+                </li>
+                
+                <li class="info">
+                <div class="left">
+                    기타
+                </div>
+                <textarea placeholder="요청사항을 적어주세요."></textarea>
+                <button type="submit" style="cursor: pointer;">신청하기</button>
+                </li>
+                
+            </ul>
+        </div>
+    </section>
+</body>
+</html>

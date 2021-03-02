@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>갤러리</title>
+    <link rel="icon" href="img/favicon.png">
+    <link rel="stylesheet" href="css/lightgallery.css">
+    
+    <style>
+    
+    *{padding: 0; margin: 0; position: relative;  list-style: none;} 
+    
+    /*header*/
+    a:link{text-decoration: none;}
+    a:visited{color:#003478; }
+    .menu-li, .menu-li>a {transition: 0.5s; font-family: 'Noto Sans KR', sans-serif !important; font-size: 15px;}
+    
+    header{position: fixed; top: 0; left: 0; z-index: 999; width: 100%; height:50px; background:linear-gradient(180deg,rgb(255, 255, 255),rgba(116, 124, 124, 0.29)); display: flex; justify-content: center; align-items: center;}
+    .nav{width: 1200px;  display: flex;}
+    .logo{flex: 3;}
+    .logo img{width: 15%}
+    .menu-li{display: flex; align-items: center; justify-content: space-around; font-size: 15px; color: #003478; font-weight: 600; width: 520px;}
+    .menu-li img{width: 15px;}
+    .menu-li .li:nth-child(5){display: flex; justify-content: center; align-items: center; background: white; border-radius: 10px; padding: 5px; }
+    
+    /* section */
+    section{width: 100%; height: 100vh; display: flex;}
+    .s1{font-family: 'Roboto', sans-serif;}
+    .s1 .exterior{width: 50%; height: 100vh; background: url(img/gallery/s1-1.jpg); background-position: center center; background-size: cover; filter: grayscale(100%);}
+    .s1 .exterior:hover{filter: grayscale(0) !important;}
+    
+    .s1 .circle{width: 300px; height: 300px; background:  rgba(240, 224, 25, 0.64); border-radius: 50%; display: flex; align-items: center; justify-content: center; position: absolute;}
+    .s1 .text{color: #003478; font-weight: 900; font-size: 50px;}
+    .s1 .interior{width: 50%; height: 100vh; background: url(img/gallery/s1-2.jpg); background-position: center center; background-size: cover; filter: grayscale(100%);}
+    .s1 .interior:hover{filter: grayscale(0) !important;}
+    .exterior .circle:nth-child(1){top: calc(50vh - 150px); left: calc(50% - 150px);}
+    .interior .circle:nth-child(1){top: calc(50vh - 150px); left: calc(50% - 150px);}
+    
+    .s2{font-family: 'Roboto', sans-serif;}
+    .navi{width: 20%; height: 100vh; background: #003478; display: flex; align-items: center; justify-content: center;}
+    .text{color: #FFE965; font-size: 50px; font-weight: 900;}
+    .gallery{display: grid; width: 80%; background: #FFE965; grid-template-rows: repeat(3,1fr); grid-template-columns: repeat(3,1fr); grid-gap: 10px;}
+    .pic{overflow: hidden; height: 100%;}
+    .pic :hover{transform: scale(1.1); }
+    .pic img{cursor: pointer; width: 100%; height: 100%; transition: all ease 1s;}
+    .s3{font-family: 'Roboto', sans-serif;}
+    
+    </style>
+    
+</head>
+<body>
+      <header>
+       <div class="nav">
+         <div class="logo">
+          <a href="FORD.html"><img src="img/HEADER/ford-logo.png"></a>
+           </div>
+           <ul class="menu-li">
+               <li class="li"><a href="FORD.html">메인</a></li>
+               <li class="li"><a href="#sp">특장점</a></li>
+               <li class="li"><a href="gallery.html">갤러리</a></li>
+               <li class="li"><a href="model.html">모델 및 사양</a></li>
+               <li class="li"><a href="testdrive.html"><img src="img/HEADER/right.png">시승신청</a></li>
+           </ul>
+       </div>
+       </header>
+   
+    <section class="s s1">
+        <div class="exterior">
+            <div class="circle">
+                <a href="#exterior"><div class="text">EXTERIOR</div></a>
+            </div>
+        </div>
+        
+        <div class="interior">
+            <div class="circle">
+                <a href="#interior"><div class="text">INTERIOR</div></a>
+            </div>
+        </div>
+    </section>  
+    
+    <section class="s s2" id="exterior">
+         <div class="navi">
+             <div class="text">EXTERIOR</div>
+         </div>
+         <div class="gallery lightgallery">
+             <a href="img/gallery/s2/1.jpg"><div class="pic"><img src="img/gallery/s2/1.jpg" alt="EXTERIOR1"></div></a>
+             <a href="img/gallery/s2/2.jpg"><div class="pic"><img src="img/gallery/s2/2.jpg" alt="EXTERIOR2"></div></a>
+             <a href="img/gallery/s2/3.jpg"><div class="pic"><img src="img/gallery/s2/3.jpg" alt="EXTERIOR3"></div></a>
+             <a href="img/gallery/s2/4.jpg"><div class="pic"><img src="img/gallery/s2/4.jpg" alt="EXTERIOR4"></div></a>
+             <a href="img/gallery/s2/5.jpg"><div class="pic"><img src="img/gallery/s2/5.jpg" alt="EXTERIOR5"></div></a>
+             <a href="img/gallery/s2/6.jpg"><div class="pic"><img src="img/gallery/s2/6.jpg" alt="EXTERIOR6"></div></a>
+             <a href="img/gallery/s2/7.jpg"><div class="pic"><img src="img/gallery/s2/7.jpg" alt="EXTERIOR7"></div></a>
+             <a href="img/gallery/s2/8.jpg"><div class="pic"><img src="img/gallery/s2/8.jpg" alt="EXTERIOR8"></div></a>
+             <a href="img/gallery/s2/9.jpg"><div class="pic"><img src="img/gallery/s2/9.jpg" alt="EXTERIOR9"></div></a>
+         </div>   
+    </section>
+    
+        <section class="s s3" id="interior">
+         <div class="navi">
+             <div class="text">INTERIOR</div>
+         </div>
+         <div class="gallery lightgallery">
+             <a href="img/gallery/s3/1.jpg"><div class="pic"><img src="img/gallery/s3/1.jpg" alt="INTERIOR1"></div></a>
+             <a href="img/gallery/s3/2.jpg"><div class="pic"><img src="img/gallery/s3/2.jpg" alt="INTERIOR2"></div></a>
+             <a href="img/gallery/s3/3.jpg"><div class="pic"><img src="img/gallery/s3/3.jpg" alt="INTERIOR3"></div></a>
+             <a href="img/gallery/s3/4.jpg"><div class="pic"><img src="img/gallery/s3/4.jpg" alt="INTERIOR4"></div></a>
+             <a href="img/gallery/s3/5.jpg"><div class="pic"><img src="img/gallery/s3/5.jpg" alt="INTERIOR5"></div></a>
+             <a href="img/gallery/s3/6.jpg"><div class="pic"><img src="img/gallery/s3/6.jpg" alt="INTERIOR6"></div></a>
+             <a href="img/gallery/s3/7.jpg"><div class="pic"><img src="img/gallery/s3/7.jpg" alt="INTERIOR7"></div></a>
+             <a href="img/gallery/s3/8.jpg"><div class="pic"><img src="img/gallery/s3/8.jpg" alt="INTERIOR8"></div></a>
+             <a href="img/gallery/s3/9.jpg"><div class="pic"><img src="img/gallery/s3/9.jpg" alt="INTERIOR9"></div></a>
+         </div>   
+    </section>  
+</body>
+</html>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script type="text/javascript" src="js/lightgallery.min.js"></script>
+<script type="text/javascript" src="js/lightgallery-all.min.js"></script>
+<script>
+    
+var i=0;
+
+function wheel(){
+    win_h = $(window).height();
+    $("html").stop().animate({scrollTop:i*win_h},1000)
+}
+
+//휠 이벤트
+
+$("*").on("mousewheel",function(event){
+    event.preventDefault();
+    delta=event.originalEvent.wheelDelta;
+    ani = $("html").is(":animated");
+    if(!ani && delta<1 && i<3){
+        i++;
+        wheel()
+    }else if( !ani && delta>0 && i>0){
+        i--;
+        wheel()
+    }
+})
+
+//라이트갤러리
+$(".lightgallery").lightGallery({
+    thembnail: true,
+    autoplay: true,
+    pause: 3000,
+    progressBar: true
+}); 
+</script>
