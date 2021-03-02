@@ -5,7 +5,7 @@
     font-weight: normal;
     font-style: normal;
 }
-body{background:url(/portfolio/img/bg-paper.jpg); }
+body{background:url(portfolio/img/bg-paper.jpg); }
 
 /* 마우스 */
 .cursor{
@@ -90,11 +90,11 @@ body{overflow-y:hidden;overflow-x:hidden;}
 .main .item3{left:200%;}
 .main .item4{left:300%;}
 .main .item5{left:400%;}
-.main .item1 .bg{background:url(./portfolio/img/1.gif);}
-.main .item2 .bg{background:url(./portfolio/img/2.jpg);}
-.main .item3 .bg{background:url(./portfolio/img/3.jpg);}
-.main .item4 .bg{background:url(./portfolio/img/4.jpg);}
-.main .item5 .bg{background:url(./portfolio/img/5.jpg);}
+.main .item1 .bg{background:url(portfolio/img/1.gif);}
+.main .item2 .bg{background:url(portfolio/img/2.jpg);}
+.main .item3 .bg{background:url(portfolio/img/3.jpg);}
+.main .item4 .bg{background:url(portfolio/img/4.jpg);}
+.main .item5 .bg{background:url(portfolio/img/5.jpg);}
 .main .item .bg{background-position:center center; background-size:cover;}
 
 /* 인디 */
